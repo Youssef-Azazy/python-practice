@@ -12,7 +12,7 @@ python-practice/
 └── projects/       the bigger portfolio projects, one folder each
 ```
 
-Each `week-XX` folder has a `README.md` with the daily plan. My solutions go in the same folder as `day-1.py`, `day-2.py` and so on.
+Each `week-XX` folder has a `README.md` with the daily plan. My solutions go in the same folder as `Day_01.py`, `Day_02.py` and so on. HackerRank solutions go in `hackerrank_*.py` files.
 
 ## 🔁 My daily routine (3 hours)
 
@@ -41,5 +41,5 @@ Add week 1 day 3: string escape exercises
 ## ▶️ How to run
 
 ```bash
-python week-01/day-1.py
+python week-01/Day_01.py
 ```
