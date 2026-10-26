@@ -24,22 +24,22 @@ print(mystring[-6:-2])  # Output: pyth
 print(mystring[-6:-3])  # Output: pyt
 print(mystring[-6:-4])  # Output: py
 print(mystring[-6:-5])  # Output: p
-print(mystring[-6:-6])  # Output: nothing because is not written the end of the range
+print(mystring[-6:-6])  # Output: (empty) because start and end are the same place, and end is not included
 
-print(mystring[-6:-7])  # Output: nothing because is not possible to go from -6 to -7
+print(mystring[-6:-7])  # Output: (empty) because the end is before the start and the default step is +1
 
 print(mystring[1:5:3])  # Output: yr
 print(mystring[1:6:2])  # Output: yti
 print(mystring[::3])  # Output: mtnph
 print(mystring[::-2])  # Output: nhy nrsm
 print(mystring[::-1])  # Output: nohtyp gnirtsym
-print(mystring[:5:-1])  # Output: nothing because is not possible to go from 1 to 5 with -1 step
+print(mystring[:5:-1])  # Output: nohtyp gn   (with a negative step it starts from the last letter and stops before index 5)
 print(mystring[5:1:-1])  # Output: irts
-print(mystring[-3:])  # Output: is
+print(mystring[-3:])  # Output: hon
 
 a = "I love python and 4g technology and 3rd generation"
 b = "  I love python    "
-print(len(a)) # Output: 13
+print(len(a)) # Output: 50
 print(len(b)) # Output: 19
 print(b.strip()) # Output: I love python
 print(b.rstrip()) # Output:   I love python    
@@ -104,5 +104,5 @@ print(s.strip().startswith("Python"))  # Output: True
 print(s.strip().endswith("L"))  # Output: True
 print(s.strip()[:6]) # Output: Python
 print(s.strip()[-8:]) # Output: POWERFUL
-print(s.strip().title().center(50,"-"))  # Output:  Python Is Fun And Python Is Powerful
+print(s.strip().title().center(50,"-"))  # Output: -------Python Is Fun And Python Is Powerful-------
 print(len(s.strip().split())) # Output: 7
